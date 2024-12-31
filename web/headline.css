@@ -1,0 +1,51 @@
+
+   #sb4:visited {text-decoration:none;} /* 点击后 */
+   #sb4:hover {text-decoration:none; font-size:36pt;} /* 鼠标移到 */
+   #sb4:active {text-decoration:none;background-color:none;} /* 点击时 */
+  #sb13{
+    /*标题*/
+   font-size:32pt;
+   text-align:center;
+   position:relative;
+   top:-17px;
+   color:#d8fbff;
+   font-style:italic;
+   Font Family："Sans-serif"
+   font-weight:lighter；
+   }
+     #sb2{
+       margin:0；
+       padding:0;
+       list-style-type: none;
+       height:41pt;
+       background-color:#007b9d;
+       box-shadow: 0 0 8px black;
+       overflow:auto;
+       position：fixed;
+       top:-20px;
+       z-index:5;
+  
+       }
+     .sb11{
+       float:left;
+       height:49px;
+       }
+     #sb4{
+       
+       display:block;
+       }
+     #sb4
+     {position:relative;
+       left:-30px;
+       bottom:-13%;
+       border-right:1px solid lightgray;
+       transition: all 0.1s ease-in-out;
+       margin:0;
+       color:white;
+       padding:0 12px 0 0;
+       font-size:32pt;
+       height:90%;
+       }
+     #sb12{
+       position:relative;
+       }
