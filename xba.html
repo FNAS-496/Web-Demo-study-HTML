@@ -1,0 +1,119 @@
+<html>
+ <head> 
+  <script src="js/jq.js"></script> 
+ </head> 
+ <body id="v1"> 
+  <meta id="s7" lang="Chinese" charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <link id="s8" rel="stylesheet" type="text/css" href="cssyang.css"> 
+  <link id="v3" rel="stylesheet" type="text/css" href="headline.css"> 
+  <title id="v2">玖|平均数计算器</title> 
+  <script>
+  function jii(){
+      //获取数字
+      var s=document.getElementById("shul").value;
+      //定义正则表达式
+      var pa=/[^(\d+.?\d*)]+/g;
+      var str;
+      var str=s.split(pa);  
+      var j=str.slice(1);  
+     /* 如下代码以后在写
+     if(ce()){
+        alert('fuck you,请正确输入');
+        }*/
+      var nub=j.map(Number);
+      var ad=nub.reduce(function (a,d){return a+d;})
+      var jd=ad/nub.length;
+      document.getElementById("xj").innerHTML="结果="+jd;
+      }
+  </script>
+  <style id="s10">
+  *{
+    box-sizing: border-box;}
+  .bor{
+  /*说明边框*/
+  width:90%;
+  height:auto;
+  background-color:rgba(0,0,0,0.1);
+  border-radius:9px;
+  margin: auto;
+  margin-top:45px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.12);
+}
+  #da{
+    background-color:rgba(240,159,195,0.279);
+    height:auto;
+    }
+#dj{
+  padding-top:15px;
+  position:relative;
+  right:20px;
+  }
+#j8{
+  width:92%;
+  }
+#shul{
+  width:95%;
+  height:90px;
+  resize: none; 
+  margin: auto;
+  display: block;
+  border-radius:8px;
+  outline:none;
+  margin-bottom:5%;
+  transition:all 0.3s ease-in-out;.
+  }
+#shul:focus{
+      box-shadow:0 0 8px rgba(240,159,195,0.999);
+      }
+    #wc{
+      position:relative;
+      top:10px;
+      left:3%;
+      color：#f2f2f2；
+      }
+    #jjb{
+      width:200px;
+      display:block;
+      height:40pt;
+      border-radius:99px;
+      margin:auto;
+      font-size:22pt;
+      background-color:rgba(40,162,175,0.399);
+      margin-top:15px;
+      margin-bottom:40px;
+      }
+
+    pre{
+      font-size:15pt;
+      padding:0;
+      margin:0;
+      height:auto;
+      height:30pt;
+      position:relative;
+      top:-14pt;
+      }
+     </style> 
+  <!--顶栏勿动--> 
+  <ul id="sb2"> 
+   <li id="v4" class="sb11"><span id="jj"><a href="index.html" id="sb4">←</a></span></li> 
+   <li id="v5" class="sb11"><h1 id="sb13">平均数计算器</h1></li> 
+  </ul> 
+  <!--顶栏勿动--> 
+  <p id="f7" class="smallfontc">还在为平均数而烦恼？还在慢慢手打计算器？快用平均数计算器！</p> 
+  <div id="v6" class="bor"> 
+   <ul id="v7"> 
+    <p id="dj">使用方法:</p> 
+    <li id="j8">在下方输入框输入要计算的数字,使用任意除小数点以外的非数字字符来分隔</li> 
+    <p id="ci" style="position:relative;right:9px;height:5%;">[注：本功能采用最新的AI技术,。自动识别数字]</p> 
+   </ul> 
+  </div> 
+  <div id="da" class="bor"> 
+   <p id="wc">请在下方输入数字:</p> 
+   <textarea id="shul" placeholder="例：13.5@15 7619:7864+49491">  </textarea> 
+   <pre id="xj">  
+     结果=
+   </pre> 
+  </div> 
+  <button id="jjb" onclick="jii()">开始计算</button>  
+ </body>
+</html>
